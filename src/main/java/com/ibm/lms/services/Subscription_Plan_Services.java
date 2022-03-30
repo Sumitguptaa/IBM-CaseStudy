@@ -1,10 +1,11 @@
 package com.ibm.lms.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.ibm.lms.entity.Subscription_Plan;
 import com.ibm.lms.repository.Subscription_Plan_Repo;
-
+@Service
 public class Subscription_Plan_Services {
 	
 	@Autowired
@@ -18,7 +19,7 @@ public class Subscription_Plan_Services {
 		repo.deleteById(id);
 	}
 	
-	void updateSubscriptionById(int id) {
-		repo.updateById(id);
-	}
+//	void updateSubscriptionById(int id) {
+//		repo.updateById(id);
+//	}
 }
